@@ -1,0 +1,16 @@
+.bio {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bio h2 {
+    color: #333;
+  }
+  
+  .bio p {
+    color: #666;
+  }
+  
