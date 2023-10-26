@@ -1,4 +1,3 @@
-import './App.css';
 import Header from './Components/Comons/Header';
 import Footer from './Components/Comons/Footer';
 import Button from './Components/Comons/Buttons';
