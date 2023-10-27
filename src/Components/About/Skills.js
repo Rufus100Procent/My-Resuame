@@ -43,6 +43,7 @@ const Skills = () => {
     <div className="skills">
       <h1 className="skills-h1">Skills</h1>
       <div className="skills-sections">
+
         {skills.map(({ category, list }) => (
           <div key={category} className="skills-category">
             <h2>{category}</h2>
@@ -56,6 +57,7 @@ const Skills = () => {
             ))}
           </div>
         ))}
+
       </div>
     </div>
   );

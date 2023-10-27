@@ -18,6 +18,13 @@
   width: 100%;
   padding: 0 1rem;
 }
+@media (min-width: 600px) {
+  .skills-sections {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .skills-category {
   width: 48%; /* Adjust the width as needed */
@@ -28,6 +35,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .skill h3 {

@@ -6,18 +6,18 @@ const Project = () => {
     <section >
       <article>
         <div className='project1'>
-        <h2>Full Stack Application</h2>
-        <p>{projectTexts.PROJECT_1}</p>
+        <h2>{projectTexts.PROJECT_1_HEADER}</h2>
+        <p>{projectTexts.PROJECT_1_BODY}</p>
         </div>
         <br/>
         <div className='project2'>
-        <h2>Worked with AWS CI/CD</h2>
-        <p>{projectTexts.PROJECT_2}</p>
+        <h2>{projectTexts.PROJECT_2_HEADER}</h2>
+        <p>{projectTexts.PROJECT_2_BODY}</p>
         </div>
         <br/>
         <div className='summerjobb'>
-          <h2>summerjobb</h2>
-          <p>{projectTexts.SUMMER_JOBB}</p>
+          <h2>{projectTexts.SUMMER_JOBB_HEADER}</h2>
+          <p>{projectTexts.SUMMER_JOBB_BODY}</p>
         </div>
       </article>
     </section>

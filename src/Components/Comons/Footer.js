@@ -2,11 +2,9 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
-  return (
-    <footer className="footer">
-      &copy; 2023
-    </footer>
-  );
+  const year = new Date().getFullYear();
+
+  return <footer>{`Copyright © Upbeat Code ${year}`}</footer>;
 };
 
 export default Footer;
