@@ -1,23 +1,30 @@
-import Header from './Components/Comons/Header';
-import Button from './Components/Comons/Buttons';
-import Bio from './Components/About/Bio';
-import Skills from './Components/About/Skills';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './Components/Comons/Footer';
-import React from 'react'
-import Project from './Components/Project/Project';
-import Sidebar from './Components/Sidebar';
+import { Home } from './Components/Home';
+import Contacts from './Components/Contact/Contacts';
+import ProjectDisplay from './Components/Projects/ProjectDisplay';
+import { NotFound } from './Components/NotFound';
+import Projects from './Components/Projects/Projects';
+
 
 const App = () => {
   return (
-    <div>
-      <Header/>
-      <Sidebar/>
-      <Button/>
-      <Bio/>
-      <Skills/>
-      <Project/>
-      <Footer/>
-    </div>
+    <div className="App">
+    <Router>
+      <Navbar />
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/contacts' element={<Contacts />} />
+        <Route path='/project/:id' element={<ProjectDisplay />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+      
+
+      <Footer />
+    </Router>
+  </div>
   )
 }
 

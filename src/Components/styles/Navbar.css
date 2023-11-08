@@ -1,0 +1,70 @@
+.navbar {
+  background: #16697a;
+
+  padding: 10px 20px;
+  position: relative;
+}
+
+.toggleButton {
+  display: none; /* Hide by default */
+  cursor: pointer;
+  padding: 10px;
+  background: none;
+  border: none;
+}
+
+.toggleButton .hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.toggleButton.open .hamburger:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggleButton.open .hamburger:nth-child(2) {
+  opacity: 0;
+}
+
+.toggleButton.open .hamburger:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+  .toggleButton {
+    display: block; /* Show on smaller screens */
+  }
+
+  .links {
+    position: absolute;
+    top: 60px; /* Position the links below the header */
+    right: 0;
+    width: 100%;
+    background: #16697a;
+    z-index: 1;
+    opacity: 1; /* Show links on mobile */
+    flex-direction: column; /* Display links vertically on mobile */
+    text-align: center; /* Center the links */
+    display: none; /* Hide links on smaller screens */
+  }
+
+  .links.open {
+    display: flex; /* Show links on smaller screens when the menu is open */
+  }
+}

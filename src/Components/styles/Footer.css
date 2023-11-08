@@ -1,0 +1,15 @@
+.footer {
+    background-color: #16697a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    top: 100vh;
+  }
+
+  p {
+    color: white;
+  }
+
