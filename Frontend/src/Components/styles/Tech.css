@@ -1,0 +1,54 @@
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    background: #82c0cc;
+    height: 6vh
+
+  }
+  
+  .slider {
+    display: flex;
+    animation: slide 20s linear infinite;
+
+  }
+  
+  .logo-item {
+    margin-right: 50px;
+    opacity: 0;
+    animation: fade 10s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .slider {
+      animation: slide 10s linear infinite;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .slider {
+      animation: slide 5s linear infinite;
+    }
+  }
